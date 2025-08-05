@@ -1,0 +1,12 @@
+---
+import Layout from "/Web Development/Assessment UCD/src/layouts/layout.astro";
+
+const { frontmatter }= Astro.props;
+
+---
+
+<Layout title={ frontmatter.title}>
+    <h1>{frontmatter.title}</h1>
+    <slot  />
+    
+</Layout>

@@ -1,0 +1,92 @@
+---
+import H1 from '../components/H1.astro';
+import Layout from '/Web Development/Assessment UCD/src/layouts/layout.astro';
+import Main from '../components/Main.astro';
+import "../styles/global.css";
+
+const foregroundColor = "pink";
+const backgroundColor = "white";
+
+const title = "The SurFACE";
+const my_obj = { brand: "The SurFACE" }
+---
+
+<Layout title="Home">
+    <Main>
+        <H1 text="SurFACE"/>
+    </Main>
+</Layout>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+<home> </home>
+
+<h2>MAKE-UP</h2>
+<div class="row">
+  <div class="column">
+    <h3>Foundation</h3>
+    <p>Achieve flawless coverage with our lightweight, buildable foundation. Designed to blur imperfections while letting your skin breathe, this formula delivers a radiant, natural finish that lasts all day. Available in a wide shade range to suit every skin tone.</p>
+  </div>
+  
+  <div class="column">
+    <h3>Eyeshadows</h3>
+    <p>Turn heads with our ultra-pigmented eyeshadow palettes. Whether you're going for soft glam or bold, editorial looks, each palette offers blendable mattes, shimmering metallics, and buttery textures that make artistry effortless.</p>
+  </div>
+  
+  <div class="column">
+    <h3>Eyebrow Promade</h3>
+    <p>Sculpt, define, and fill with our smudge-proof eyebrow pomade. Perfect for creating everything from soft, feathery brows to bold, structured arches. Long-wearing and sweat-resistant—because your brows deserve to stay flawless.</p>
+  </div>
+</div>
+
+<h2> SKIN CARE</h2>
+
+<div class="row">
+  <div class="column">
+    <h3>Retional</h3>
+    <p>Target fine lines, uneven skin tone, and texture with our beginner-friendly retinol formula—perfect for nighttime rejuvenation and a smoother makeup base.</p>
+  </div>
+  
+  <div class="column">
+    <h3>Hydrating Facial Cleanser </h3>
+    <p>A gentle, non-stripping cleanser enriched with hyaluronic acid and botanical extracts to remove impurities while keeping your skin soft and nourished.</p>
+  </div>
+  
+  <div class="column">
+    <h3>Sunscreen SPF 40</h3>
+    <p>Our lightweight, invisible SPF 40 protects your skin from sun damage and acts as the perfect primer under your makeup.</p>
+  </div>
+</div>
+
+    </header>
+    <slot />
+  </body>
+
+
+
+
+
+</section>
+
+	
+
+<article>
+
+
+
+</article>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+---
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+};
+
+const { title= "SurFACE HomePage", description="A make-up launch page", image="public/images/Final.png"} = Astro.props as Props;
+const my_num= 2026;
+// adding strings and javascript to the frontmatter //
+const my_obj= {
+	name: "Jessica",
+	brand: "The SurFACE",
+};
+
+const my_array =["1st of January "];
+
+// style imports
+import "../styles/global.css";
+import slider from "../pages/slider.astro";
+import Card from "../components/Card.astro";
+import Index from "../pages/index.astro";
+import About from "../pages/about.astro";
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="description" content={description} />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property= "{Image}" content="images/Final.png" />
+
+  <!--header section starts & navbar -->
+     <header>
+  <div class="topnav">
+  <a class="active" href="/">Home</a> 
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+  <h1> {my_obj.brand}</h1>
+   <div class="logo">
+    <p><img src="../public/images/Final.png" alt="logo"/></p>
+  </div>
+   </div>
+</header>
+<title> {title}</title>
+</div>
+
+
+
+  <!--taking up the bodies enter height using min-h-screen so confirms tail class works -->
+            
+<div class="slider">
+  <div class="slide-track">
+    <!--3 slides -->
+    <div class="slide 1">
+     <img src="/public/picture1.jpg" alt="picture 1" />
+    </div>
+       <div class="slide 2">
+    <img src="/public/picture2.jpg" alt="picture 2" />
+       </div>
+         <div class="slide 3">
+    <img src="/public/picture3.jpg" alt="picture 3" />
+        </div>
+
+        <!--same 3 slides doubled -->
+    <div class="slide 1">
+     <img src="/public/picture1.jpg" alt="picture 1" />
+    </div>
+       <div class="slide 2">
+    <img src="/public/picture2.jpg" alt="picture 2" />
+       </div>
+         <div class="slide 3">
+    <img src="/public/picture3.jpg" alt="picture 3" />
+        </div>
+
+
+
+
+
+<footer>
+
+
+
+
+
+</footer>
